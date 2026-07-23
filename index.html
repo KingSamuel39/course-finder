@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeFinder — Free Programming Courses & Videos</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <div class="search-wrap">
+    <input type="text" id="searchInput" placeholder="Search all resources..." />
+  </div>
+   <main>
+    <section id="categoryView">
+      <h2>Pick a category</h2>
+      <div id="categoryGrid"></div>
+    </section>
+
+    <section id="detailView" class="hidden">
+      <button id="backBtn">&larr; Back</button>
+      <h2 id="detailTitle"></h2>
+      <div id="typeTabs"></div>
+      <div id="detailContent"></div>
+    </section>
+
+    <section id="searchView" class="hidden">
+      <h2 id="searchTitle"></h2>
+      <div id="searchContent"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
