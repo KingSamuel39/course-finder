@@ -79,9 +79,9 @@ const searchTitle = document.getElementById("searchTitle");
 const searchContent = document.getElementById("searchContent");
 
 function makeCode(name) {
-  return name.slice(0, 3).toUpperCase() + "101";
+  const letters = name.replace(/[^a-zA-Z]/g, "");
+  return letters.slice(0, 3).toUpperCase() + "101";
 }
-
 function showCategories() {
     searchInput.value = "";
   detailView.classList.add("hidden");
